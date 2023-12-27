@@ -1,7 +1,7 @@
 Feature: creating google account
 
 Background: common for all test
-		Given user launch the "edge" browser
+		Given user launch the "chrome" browser
 		When user enters the url for the website
 		Then the user navigate to the right application page
 		

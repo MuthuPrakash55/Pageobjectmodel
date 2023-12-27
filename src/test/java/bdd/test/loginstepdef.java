@@ -1,5 +1,8 @@
 package bdd.test;
 
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -33,11 +36,12 @@ public class loginstepdef extends baseclass{
 		default:
 			break;
 		}
-	   sign=new signup(driver);
+	  
 	  
 	}
 	@When("user enters the url for the website")
 	public void userEntersTheUrlForTheWebsite() {
+		 sign=new signup(driver);
 	    driver.get("https://accounts.google.com/signup");
 	  
 	}
